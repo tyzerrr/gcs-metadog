@@ -29,8 +29,9 @@ When you search and filter gokart GCS cache, sometimes, you want to search Task 
 For example, you want to search some Tasks those have TaskA(parameter1=1, parameter2=True) as dependency.
 You can easily search with gmd by using nest mode.
 Parameter and Task names are case sensitive.
+The -n flag is required when using Nest Mode.
 ```bash
-gmd -b ${bucket_name} -t ${dependency_task_name} -p {parameter_name1=parameter_value1} -p {parameter_name1=parameter_value1} .....
+gmd -n -b ${bucket_name} -t ${dependency_task_name} -p {parameter_name1=parameter_value1} -p {parameter_name2=parameter_value2} .....
 ```
 
 ## Future Work
